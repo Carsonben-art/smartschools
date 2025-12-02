@@ -5,10 +5,10 @@ import {
   Button,
   Card,
   CardContent,
-  Grid,
   Stack,
   Typography,
 } from '@mui/material';
+import Grid from '@mui/material/Grid';
 import PaymentsOutlinedIcon from '@mui/icons-material/PaymentsOutlined';
 import WarningAmberOutlinedIcon from '@mui/icons-material/WarningAmberOutlined';
 import { useRouter } from 'next/navigation';
@@ -57,7 +57,7 @@ export default function FinancialsCard({
 
         {/* Numbers */}
         <Grid container spacing={2} mb={3}>
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Box
               sx={{
                 borderRadius: 2,
@@ -81,7 +81,7 @@ export default function FinancialsCard({
             </Box>
           </Grid>
 
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Box
               sx={{
                 borderRadius: 2,
@@ -105,7 +105,7 @@ export default function FinancialsCard({
             </Box>
           </Grid>
 
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Box
               sx={{
                 borderRadius: 2,

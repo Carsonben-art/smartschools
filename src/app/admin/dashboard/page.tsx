@@ -7,6 +7,8 @@ import {
   Grid,
   Typography,
 } from '@mui/material';
+// import Grid from '@mui/material/Grid';
+
 
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
@@ -80,7 +82,7 @@ export default function AdminDashboardPage() {
 
           {/* Stat cards row */}
           <Grid container spacing={2.5} sx={{ mb: 4 }}>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
               <StatCard
                 label="Total Classes"
                 value={12}
@@ -88,7 +90,7 @@ export default function AdminDashboardPage() {
                 icon={<SchoolRoundedIcon sx={{ color: '#2563eb' }} />}
               />
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
               <StatCard
                 label="Total Students"
                 value={487}
@@ -96,7 +98,7 @@ export default function AdminDashboardPage() {
                 icon={<PeopleAltRoundedIcon sx={{ color: '#16a34a' }} />}
               />
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
               <StatCard
                 label="Total Teachers"
                 value={24}
@@ -104,7 +106,7 @@ export default function AdminDashboardPage() {
                 icon={<PersonRoundedIcon sx={{ color: '#8b5cf6' }} />}
               />
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
               <StatCard
                 label="Active Sessions"
                 value={8}
@@ -113,6 +115,7 @@ export default function AdminDashboardPage() {
               />
             </Grid>
           </Grid>
+
 
           {/* Quick Actions */}
           <Box sx={{ mb: 2 }}>
@@ -124,7 +127,7 @@ export default function AdminDashboardPage() {
             </Typography>
 
             <Grid container spacing={2.5}>
-              <Grid item xs={12} md={6}>
+              <Grid size={{ xs: 12, md: 6 }}>
                 <QuickActionCard
                   title="Add Classes"
                   description="Create new classes and assign teachers"
@@ -132,7 +135,8 @@ export default function AdminDashboardPage() {
                   icon={<AddCircleOutlineRoundedIcon sx={{ color: '#2563eb' }} />}
                 />
               </Grid>
-              <Grid item xs={12} md={6}>
+
+              <Grid size={{ xs: 12, md: 6 }}>
                 <QuickActionCard
                   title="Manage Classes"
                   description="View and edit existing classes"
@@ -140,7 +144,8 @@ export default function AdminDashboardPage() {
                   icon={<ClassRoundedIcon sx={{ color: '#1d4ed8' }} />}
                 />
               </Grid>
-              <Grid item xs={12} md={6}>
+
+              <Grid size={{ xs: 12, md: 6 }}>
                 <QuickActionCard
                   title="Manage Students"
                   description="Add, edit, or remove student records"
@@ -148,7 +153,8 @@ export default function AdminDashboardPage() {
                   icon={<GroupRoundedIcon sx={{ color: '#16a34a' }} />}
                 />
               </Grid>
-              <Grid item xs={12} md={6}>
+
+              <Grid size={{ xs: 12, md: 6 }}>
                 <QuickActionCard
                   title="Manage Teachers"
                   description="Handle teacher assignments and details"
@@ -157,6 +163,7 @@ export default function AdminDashboardPage() {
                 />
               </Grid>
             </Grid>
+
           </Box>
 
           {/* Recent Activity full width */}

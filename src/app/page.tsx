@@ -5,11 +5,11 @@ import {
   Card,
   CardContent,
   Container,
-  Grid,
   Stack,
   Typography,
   Link as MuiLink,
 } from '@mui/material';
+import Grid from '@mui/material/Grid';
 
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined';
@@ -126,57 +126,56 @@ export default function HomePage() {
               system. Built for schools in Kenya, designed for simplicity.
             </Typography>
 
-           <Stack
-  direction={{ xs: 'column', sm: 'row' }}
-  spacing={2}
-  justifyContent="center"
-  alignItems={{ xs: 'stretch', sm: 'center' }}
->
-  {/* School Login */}
-  <Link href="/school/login" passHref legacyBehavior>
-    <Button
-      variant="contained"
-      size="large"
-      sx={{
-        px: 5,
-        py: 1.4,
-        borderRadius: 2,
-        textTransform: 'none',
-        fontWeight: 600,
-      }}
-    >
-      School Login
-    </Button>
-  </Link>
+            <Stack
+              direction={{ xs: 'column', sm: 'row' }}
+              spacing={2}
+              justifyContent="center"
+              alignItems={{ xs: 'stretch', sm: 'center' }}
+            >
+              {/* School Login */}
+              <Link href="/school/login" passHref legacyBehavior>
+                <Button
+                  variant="contained"
+                  size="large"
+                  sx={{
+                    px: 5,
+                    py: 1.4,
+                    borderRadius: 2,
+                    textTransform: 'none',
+                    fontWeight: 600,
+                  }}
+                >
+                  School Login
+                </Button>
+              </Link>
 
-  {/* Parent Access */}
-  <Link href="/parent/access" passHref legacyBehavior>
-    <Button
-      variant="outlined"
-      size="large"
-      sx={{
-        px: 5,
-        py: 1.4,
-        borderRadius: 2,
-        textTransform: 'none',
-        fontWeight: 600,
-        borderWidth: 2,
-        '&:hover': {
-          borderWidth: 2,
-        },
-      }}
-    >
-      Parent Access
-    </Button>
-  </Link>
-</Stack>
-
+              {/* Parent Access */}
+              <Link href="/parent/access" passHref legacyBehavior>
+                <Button
+                  variant="outlined"
+                  size="large"
+                  sx={{
+                    px: 5,
+                    py: 1.4,
+                    borderRadius: 2,
+                    textTransform: 'none',
+                    fontWeight: 600,
+                    borderWidth: 2,
+                    '&:hover': {
+                      borderWidth: 2,
+                    },
+                  }}
+                >
+                  Parent Access
+                </Button>
+              </Link>
+            </Stack>
           </Box>
 
           {/* Feature cards */}
           <Box sx={{ pb: { xs: 8, md: 10 } }}>
             <Grid container spacing={3} justifyContent="center">
-              <Grid item xs={12} sm={6} md={4}>
+              <Grid size={{ xs: 12, sm: 6, md: 4 }}>
                 <Card
                   elevation={3}
                   sx={{
@@ -219,7 +218,7 @@ export default function HomePage() {
                 </Card>
               </Grid>
 
-              <Grid item xs={12} sm={6} md={4}>
+              <Grid size={{ xs: 12, sm: 6, md: 4 }}>
                 <Card
                   elevation={3}
                   sx={{
@@ -262,7 +261,7 @@ export default function HomePage() {
                 </Card>
               </Grid>
 
-              <Grid item xs={12} sm={6} md={4}>
+              <Grid size={{ xs: 12, sm: 6, md: 4 }}>
                 <Card
                   elevation={3}
                   sx={{
